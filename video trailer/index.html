@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Trailer</title>
-    <meta
-      name="description"
-      content="Watch the latest video trailers here. Stay updated with the newest releases."
-    />
-    <meta name="keywords" content="video, trailer, latest, new releases" />
-    <meta name="author" content="Vinay sena" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Add more SEO-related meta tags as needed -->
-  </head>
-  <body>
-    <div class="image-container">
-      <div class="play-button">Play</div>
-    </div>
-    <div class="trailer-container active">
-      <video src="assets/trailer.mp4" controls autoplay muted></video>
-      <div class="close-button">X</div>
-    </div>
-    <!-- Add more content as needed -->
-    <script src="js/app.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video Trailer</title>
+        <meta
+            name="description"
+            content="Watch the latest video trailers here. Stay updated with the newest releases."
+        />
+        <meta name="keywords" content="video, trailer, latest, new releases" />
+        <meta name="author" content="Vinay sena" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <main>
+            <div class="image-container" role="region" aria-label="Video preview">
+                <button 
+                    class="play-button" 
+                    aria-label="Play video trailer"
+                    role="button">
+                    Play
+                </button>
+            </div>
+            <div class="trailer-container active" role="dialog" aria-label="Video trailer player">
+                <video 
+                    src="assets/trailer.mp4" 
+                    controls 
+                    autoplay 
+                    muted
+                    aria-label="Video trailer content">
+                    <track kind="captions" src="path-to-captions.vtt" label="English captions">
+                </video>
+                <button 
+                    class="close-button" 
+                    aria-label="Close video trailer"
+                    role="button">
+                    X
+                </button>
+            </div>
+        </main>
+        <script src="js/app.js"></script>
+    </body>
 </html>
