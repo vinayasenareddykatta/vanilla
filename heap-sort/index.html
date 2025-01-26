@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heap Sort Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heap Sort Visualization</h1>
+        <div class="info-panel">
+            <h3>Color Guide:</h3>
+            <div class="color-guide">
+                <div class="guide-item">
+                    <div class="sample heapify"></div>
+                    <span>Heapifying</span>
+                </div>
+                <div class="guide-item">
+                    <div class="sample comparing"></div>
+                    <span>Comparing</span>
+                </div>
+                <div class="guide-item">
+                    <div class="sample sorted"></div>
+                    <span>Sorted</span>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+            <button id="startBtn">Start Heap Sort</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div id="message" class="message"></div>
+        <div id="stepInfo" class="step-info"></div>
+        <div id="arrayContainer" class="array-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+input {
+    padding: 8px;
+    margin: 0 5px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.array-element {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.active {
+    background-color: #ffeb3b;
+}
+
+.mid {
+    background-color: #4caf50;
+    color: white;
+}
+
+.found {
+    background-color: #4caf50;
+    color: white;
+}
+
+.not-found {
+    background-color: #f44336;
+    color: white;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+}

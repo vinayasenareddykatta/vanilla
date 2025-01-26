@@ -1,0 +1,70 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+input, button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    margin: 20px 0;
+    gap: 2px;
+}
+
+.array-bar {
+    width: 30px;
+    background-color: #4CAF50;
+    transition: height 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.array-bar span {
+    color: white;
+    font-size: 12px;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.comparing {
+    background-color: #ff9800;
+}
+
+.sorted {
+    background-color: #2196F3;
+}
+
+.minimum {
+    background-color: #f44336;
+}
+
+.info-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.step-info {
+    margin: 10px 0;
+    font-family: monospace;
+    text-align: left;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
